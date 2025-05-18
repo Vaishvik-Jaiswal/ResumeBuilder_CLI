@@ -1,0 +1,29 @@
+{
+    "name": "vaishvik Jaiswal",
+    "email": "vaishvikjaiswal2604@gmail.com",
+    "phone": "9766398225",
+    "education": [
+        {
+            "degree": "12th",
+            "institution": "Umathe",
+            "year": "2022"
+        },
+        {
+            "degree": "B.Tech",
+            "institution": "Ramdeobaba",
+            "year": "2026"
+        }
+    ],
+    "experience": [
+        {
+            "role": "Full Stack Intern",
+            "company": "BCG",
+            "duration": "7weeks",
+            "description": "yahoooooo"
+        }
+    ],
+    "skills": [
+        "Technical: Python",
+        "Soft: Speaking"
+    ]
+}
