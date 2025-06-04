@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resume-cli-generator"
+version = "1.0.0"
+description = "A CLI tool to generate professional resumes in PDF format"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "jinja2>=3.0.0",
+    "weasyprint>=54.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/resume-cli-generator"
+Repository = "https://github.com/yourusername/resume-cli-generator.git"
+"Bug Tracker" = "https://github.com/yourusername/resume-cli-generator/issues"
+
+[project.scripts]
+resume-generator = "resume_generator.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["resume_generator*"]
+
+[tool.setuptools.package-data]
+resume_generator = ["templates/*.html"]
