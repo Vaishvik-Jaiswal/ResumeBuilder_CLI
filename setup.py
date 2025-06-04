@@ -6,12 +6,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="resume-cli-generator",
     version="1.0.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Vaishvik Jaiswal",
+    author_email="vaishvikjaiswal05726@gmail.com",
     description="A CLI tool to generate professional resumes in PDF format",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/resume-cli-generator",
+    url="https://github.com/Vaishvik-Jaiswal/resume-cli-generator",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",

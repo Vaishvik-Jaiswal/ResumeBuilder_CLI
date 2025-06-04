@@ -7,7 +7,7 @@ name = "resume-cli-generator"
 version = "1.0.0"
 description = "A CLI tool to generate professional resumes in PDF format"
 authors = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "Vaishvik Jaiswal", email = "vaishvikjaiswal05726@gmail.com"}
 ]
 license = {file = "LICENSE"}
 readme = "README.md"
@@ -30,9 +30,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/resume-cli-generator"
-Repository = "https://github.com/yourusername/resume-cli-generator.git"
-"Bug Tracker" = "https://github.com/yourusername/resume-cli-generator/issues"
+Homepage = "https://github.com/Vaishvik-Jaiswal/resume-cli-generator"
+Repository = "https://github.com/Vaishvik-Jaiswal/resume-cli-generator.git"
+"Bug Tracker" = "https://github.com/Vaishvik-Jaiswal/resume-cli-generator/issues"
 
 [project.scripts]
 resume-generator = "resume_generator.cli:main"
