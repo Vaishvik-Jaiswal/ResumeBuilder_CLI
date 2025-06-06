@@ -1,6 +1,6 @@
 # Resume CLI Generator
 
-A simple and elegant command-line tool to generate professional resumes in . No design skills required - just provide your information and get a beautifully formatted resume!
+A simple and elegant command-line tool to generate professional resumes in PDF format. No design skills required - just provide your information and get a beautifully formatted resume!
 
 ## Features
 
