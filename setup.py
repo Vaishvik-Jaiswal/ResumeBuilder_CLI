@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="resume-cli-generator",
-    version="1.0.0",
+    version="1.0.1",
     author="Vaishvik Jaiswal",
     author_email="vaishvikjaiswal05726@gmail.com",
     description="A CLI tool to generate professional resumes in PDF format",
