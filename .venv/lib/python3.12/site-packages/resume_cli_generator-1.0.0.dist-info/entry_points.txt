@@ -1,0 +1,2 @@
+[console_scripts]
+resume-generator = resume_generator.cli:main
