@@ -275,25 +275,25 @@
         {% endfor %}
     </div>
 
-<!-- Professional Experience Section -->
-<div class="section">
-    <h2 class="section-title">Professional Experience</h2>
-    {% for exp in experience %}
-    <div class="experience-item">
-        <div class="role">{{ exp.role }}</div>
-        <div class="company">{{ exp.company }}</div>
-        <div class="duration">{{ exp.duration }}{% if exp.location %} | {{ exp.location }}{% endif %}</div>
-        <div class="description">{{ exp.description }}</div>
-        {% if exp.achievements %}
-        <ul>
-            {% for ach in exp.achievements %}
-            <li>{{ ach }}</li>
-            {% endfor %}
-        </ul>
-        {% endif %}
+    <!-- Professional Experience Section -->
+    <div class="section">
+        <h2 class="section-title">Professional Experience</h2>
+        {% for exp in experience %}
+        <div class="experience-item">
+            <div class="role">{{ exp.role }}</div>
+            <div class="company">{{ exp.company }}</div>
+            <div class="duration">{{ exp.duration }}{% if exp.location %} | {{ exp.location }}{% endif %}</div>
+            <div class="description">{{ exp.description }}</div>
+            {% if exp.achievements %}
+            <ul>
+                {% for ach in exp.achievements %}
+                <li>{{ ach }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-</div>
 
     <!-- Skills Section -->
     <div class="section">

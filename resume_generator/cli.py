@@ -8,7 +8,12 @@ import json
 import os
 import sys
 from pathlib import Path
-import pkg_resources
+try:
+    # Python 3.9+
+    from importlib.resources import files
+except ImportError:
+    # Python 3.7-3.8
+    from importlib_resources import files
 from jinja2 import Environment, BaseLoader
 from weasyprint import HTML
 
@@ -26,9 +31,9 @@ class StringTemplateLoader(BaseLoader):
 def get_template_content():
     """Get the HTML template content from the package."""
     try:
-        template_path = pkg_resources.resource_filename('resume_generator', 'templates/resume_template.html')
-        with open(template_path, 'r', encoding='utf-8') as f:
-            return f.read()
+        # Try to read from package resources
+        template_files = files('resume_generator') / 'templates' / 'resume_template.html'
+        return template_files.read_text(encoding='utf-8')
     except:
         # Fallback: embed template directly
         return '''<!DOCTYPE html>

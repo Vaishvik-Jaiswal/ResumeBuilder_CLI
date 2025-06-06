@@ -29,6 +29,7 @@ setup(
     install_requires=[
         "jinja2>=3.0.0",
         "weasyprint>=54.0",
+        "importlib-resources>=1.3.0; python_version<'3.9'",
     ],
     entry_points={
         "console_scripts": [
